@@ -7,7 +7,7 @@ import {base64str} from './base64'
 
 
 const App = () => {
-    const [ready, setReady] = useState(false);
+
     const [images, setImages] = useState('')
     // decode base64 string, remove space for IE compatibility
     var binary = atob(base64str.replace(/\s/g, ''));
@@ -31,18 +31,25 @@ const App = () => {
     console.log(typeof blob)
    blob && convertPdf(blob)
 
-    useEffect(() => {
-        setTimeout(() => {
-          setReady(true);
-        }, 5);
-      }, []);
 
 
     return (
         
         <div className="App">
             {images && (
-            <HTMLFlipBook width={300} height={500}>
+            <HTMLFlipBook              
+                width={550}
+                height={733}
+                size="stretch"
+                minWidth={315}
+                maxWidth={1000}
+                minHeight={400}
+                maxHeight={1533}
+                maxShadowOpacity={0.5}
+                showCover={true}
+                mobileScrollSupport={true}
+                className="demo-book"
+            >
                 {images.map(image => {
                     return (
                         <div><img src={image} /></div>
@@ -55,3 +62,4 @@ const App = () => {
 }
 
 export default App;
+

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { PDFJS } from 'pdfjs-dist/webpack';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@react-pdf/renderer": "^1.6.13",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -14,6 +19,7 @@
     "react-pageflip": "^1.0.0",
     "react-pdf": "^5.2.0",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

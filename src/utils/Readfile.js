@@ -24,16 +24,12 @@ const convertPdfToImages = async (file) => {
   const data = await readFileData(file);
   const pdf = await PDFJS.getDocument(data).promise;
   const canvas = document.createElement("canvas");
-  console.log(pdf.numPages)
   for (let i = 0; i < pdf.numPages; i++) {
     const page = await pdf.getPage(i + 1);
-    console.log(page)
-    console.log(images)
     const viewport = page.getViewport({ scale: 1 });
     const context = canvas.getContext("2d");
     canvas.height = viewport.height;
     canvas.width = viewport.width;
-    console.log(canvas)
     await page.render({ canvasContext: context, viewport: viewport }).promise;
     images.push(canvas.toDataURL());
   }

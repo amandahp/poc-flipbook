@@ -1,0 +1,73 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "number-page number-page number-page"
+    "arrow-2 flipbook arrow";
+}
+
+.flipbook { 
+  grid-area: flipbook;
+  margin-top: 20px;
+  
+
+}
+
+.arrow { 
+  grid-area: arrow;
+  display: flex;
+  margin-left: 30px;
+}
+
+.arrow-2 { 
+  grid-area: arrow-2; 
+  display: flex;
+  margin-left: 85px;
+
+}
+
+.number-page { 
+  grid-area: number-page; 
+  display: flex;
+  background-color:#d8d8d8;
+
+}
+
+
+.icon{
+  font-size: 50px;
+  color: #a9a9a9;
+}
+
+.icon:hover{
+  color: grey;
+}
+
+.button{
+  background-color: transparent;
+  border: none;
+  border-bottom: 0px;
+  border-radius: 80px;
+  position: relative;
+  cursor: pointer;
+  height: 50px;
+  margin-top: 260px;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: none
+}
+
+
+
+.pages-number{
+  align-self:center;
+  text-align: center;
+  position: relative;
+  left: 48%;
+  background-color: white;
+  border: 1px solid black;
+}

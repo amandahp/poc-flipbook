@@ -11,7 +11,7 @@ import './index.styles.css'
 
 
 const FlipBook = ({images}) => {
-    const iconArrowLeft = <FontAwesomeIcon icon={faArrowLeft} className='icon' />
+    const iconArrowLeft = <FontAwesomeIcon icon={faArrowLeft} className='icon-left' />
     const iconArrowRight = <FontAwesomeIcon icon={faArrowRight} className='icon' />
 
     const [page, setPage] = useState(0);

@@ -7,6 +7,7 @@
 
 .demo-book {
   align-items: center;
+  margin-left: 40px;
 }
 
 .div-book{
@@ -15,7 +16,6 @@
   align-items: center;
 }
 
-.App{
-  display: flex;
-  align-items: center;
+html, body, .App{
+  width: 100%;
 }
